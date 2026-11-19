@@ -2,6 +2,17 @@
 
 A fully local AI chatbot powered by **Qwen3 8B**, Ollama, and FastAPI. Chat with your AI assistant, manage conversations, and access your chatbot through your PC or mobile browser.
 
+## 📸 Project Screenshots
+
+### 🖥️ Desktop — Dark Mode
+![Desktop Dark Mode](screenshots/desktop-dark.png)
+
+### ☀️ Desktop — Light Mode
+![Desktop Light Mode](screenshots/desktop-light.png)
+
+### 📱 Mobile View
+![Mobile Chatbot](screenshots/mobile.jpeg)
+
 ## ✨ Features
 
 - **Local AI:** Uses Qwen3 8B through Ollama.
