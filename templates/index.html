@@ -1,0 +1,109 @@
+
+<!DOCTYPE html>
+<html lang="en">
+
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>My Local AI Chatbot</title>
+
+    <!-- Main chatbot styling -->
+    <link rel="stylesheet" href="/static/style.css">
+
+    <!-- Local Markdown styling -->
+    <link rel="stylesheet" href="/static/libs/github-markdown-dark.min.css">
+
+    <!-- Local code syntax highlighting styling -->
+    <link rel="stylesheet" href="/static/libs/github-dark.min.css">
+
+    <!-- Local JavaScript libraries -->
+    <script src="/static/libs/marked.min.js"></script>
+    <script src="/static/libs/highlight.min.js"></script>
+    <script src="/static/libs/purify.min.js"></script>
+
+</head>
+
+
+<body>
+
+    <!-- Mobile sidebar toggle -->
+    <button id="sidebar-toggle" aria-label="Open chat menu">
+        ☰
+    </button>
+    <!-- Sidebar -->
+    <aside id="sidebar">
+
+        <h2>My Local AI</h2>
+        <button id="theme-toggle">      
+            ☀️ Light Mode
+        </button>
+
+        <button id="new-chat-btn">
+            + New Chat
+        </button>
+
+        <h3>Chat History</h3>
+
+        <!-- Search conversations -->
+        <input
+            type="text"
+            id="chat-search"
+            placeholder="🔍 Search conversations..."
+        >
+
+        <div id="chat-history">
+        <!-- Previous conversations will appear here -->
+        </div>
+
+    </aside>
+    <!-- Sidebar overlay -->
+    <div id="sidebar-overlay"></div>
+
+    <!-- Main Chat Area -->
+    <main id="main-content">
+
+        <div id="chat-container">
+
+            <h1 id="chat-title">New Chat</h1>
+
+            <div id="messages">
+
+                <div class="bot-message">
+                    Hello! 👋 I'm your local AI assistant.
+                    How can I help you today?
+                </div>
+
+            </div>
+
+            
+            <div id="input-container">
+
+                <textarea
+                    id="user-input"
+                    placeholder="Ask me anything..."
+                    rows="1"
+                ></textarea>
+
+                <button id="send-btn" type="button">
+                    Send
+                </button>
+
+                <button id="stop-btn" type="button" hidden>
+                    ⏹ Stop
+                </button>
+
+            </div>
+
+
+        </div>
+
+    </main>
+
+
+    <script src="/static/app.js"></script>
+
+</body>
+
+</html>
